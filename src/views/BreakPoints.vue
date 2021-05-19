@@ -2,22 +2,22 @@
   <v-container>
     <v-card>
       <v-card-title>
-        $vuetify.breakpoint.name : {{$vuetify.breakpoint.name}}
+        $vuetify.breakpoint.name : {{ $vuetify.breakpoint.name }}
       </v-card-title>
       <v-container class="grey lighten-3">
         <v-card
           class="pa-3"
           outlined
-          v-bind:height="height"
+          :height="height"
         >
           콘텐츠
         </v-card>
         <v-card class="mt-5">
           <v-card-title>
-            $vuetify.breakpoint.mobile : {{$vuetify.breakpoint.mobile}} : {{$vuetify.breakpoint.mobileBreakpoint}}
+            $vuetify.breakpoint.mobile : {{ $vuetify.breakpoint.mobile }} : {{ $vuetify.breakpoint.mobileBreakpoint }}
           </v-card-title>
           <v-container class="grey lighten-3">
-             <v-dialog
+            <v-dialog
               v-model="dialog"
               width="500"
               :fullscreen="$vuetify.breakpoint.mobile"
@@ -42,10 +42,10 @@
                   아유 오케이?a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </v-card-text>
 
-                <v-divider></v-divider>
+                <v-divider />
 
                 <v-card-actions>
-                  <v-spacer></v-spacer>
+                  <v-spacer />
                   <v-btn
                     color="primary"
                     text
@@ -61,25 +61,23 @@
       </v-container>
     </v-card>
     <v-card class="mt-5">
-        <v-card-title>
-          Vuetify Breakpoint Object
-        </v-card-title>
-        <v-container class="grey lighten-3">
-          <v-card
-            class="pa-3"
-            outlined
-          >
-            $vuetify.breakpoint.name : {{$vuetify.breakpoint.name}}<br/>
-            $vuetify.breakpoint.lg:{{$vuetify.breakpoint.mdAndUp}}<br/>
-            $vuetify.breakpoint.width : {{$vuetify.breakpoint.width}}<br/>
-            $vuetify.breakpoint.height: {{$vuetify.breakpoint.height}}<br/>
-            $vuetify.breakpoint.thresholds:{{$vuetify.breakpoint.thresholds}}<br/>
-
-          </v-card>
-        </v-container>
+      <v-card-title>
+        Vuetify Breakpoint Object
+      </v-card-title>
+      <v-container class="grey lighten-3">
+        <v-card
+          class="pa-3"
+          outlined
+        >
+          $vuetify.breakpoint.name : {{ $vuetify.breakpoint.name }}<br>
+          $vuetify.breakpoint.lg:{{ $vuetify.breakpoint.mdAndUp }}<br>
+          $vuetify.breakpoint.width : {{ $vuetify.breakpoint.width }}<br>
+          $vuetify.breakpoint.height: {{ $vuetify.breakpoint.height }}<br>
+          $vuetify.breakpoint.thresholds:{{ $vuetify.breakpoint.thresholds }}<br>
+        </v-card>
+      </v-container>
     </v-card>
   </v-container>
-
 </template>
 <script>
 export default {
@@ -91,11 +89,11 @@ export default {
   computed:{
     height(){
       switch(this.$vuetify.breakpoint.name){
-        case 'xs':return 100
-        case 'sm':return 200
-        case 'md':return 300
-        case 'lg':return 400
-        default: return 500
+      case 'xs':return 100
+      case 'sm':return 200
+      case 'md':return 300
+      case 'lg':return 400
+      default: return 500
       }
     }
   }

@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <v-card  class="pa-3">
+    <v-card class="pa-3">
       <v-row dense>
         <v-col
           cols="auto"
@@ -29,7 +29,7 @@
           </v-card>
         </v-col>
       </v-row>
-       <v-row dense>
+      <v-row dense>
         <v-col>
           <v-card
             class="pa-3"
@@ -58,7 +58,7 @@
       </v-row>
     </v-card>
 
-      <v-card  class="pa-3 mt-3">
+    <v-card class="pa-3 mt-3">
       <v-row dense>
         <v-col>
           <v-card
@@ -86,7 +86,7 @@
           </v-card>
         </v-col>
       </v-row>
-       <v-row dense>
+      <v-row dense>
         <v-col>
           <v-card
             class="pa-3"
@@ -115,7 +115,7 @@
       </v-row>
     </v-card>
 
-      <v-card  class="pa-3 mt-3">
+    <v-card class="pa-3 mt-3">
       <v-row
         dense
         style="height:120px"
@@ -150,11 +150,11 @@
           </v-card>
         </v-col>
       </v-row>
-       <v-row
+      <v-row
         dense
         style="height:120px"
         class="yellow darken-2"
-       >
+      >
         <v-col
           cols="6"
           align-self="end"
@@ -188,11 +188,10 @@
       </v-row>
     </v-card>
 
-     <v-card  class="pa-3 mt-3">
+    <v-card class="pa-3 mt-3">
       <v-row
         dense
         justify="space-around"
-
       >
         <v-col
           cols="auto"
@@ -226,16 +225,16 @@
           </v-card>
         </v-col>
       </v-row>
-       <v-row
+      <v-row
         dense
-       >
+      >
         <v-col>
-            <v-card
-              class="pa-3"
-              outlined
-            >
-              Col8
-            </v-card>
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col8
+          </v-card>
         </v-col>
         <v-spacer>v-spacer</v-spacer>
         <v-col>
