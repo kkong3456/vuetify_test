@@ -1,0 +1,268 @@
+<template>
+  <v-container fluid>
+    <v-card  class="pa-3">
+      <v-row dense>
+        <v-col
+          cols="auto"
+        >
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col
+          </v-card>
+        </v-col>
+      </v-row>
+       <v-row dense>
+        <v-col>
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col2
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col2
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="pa-3"
+            elevation="5"
+            outlined
+          >
+            Col2
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-card>
+
+      <v-card  class="pa-3 mt-3">
+      <v-row dense>
+        <v-col>
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col3
+          </v-card>
+        </v-col>
+
+        <v-col>
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col3
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col3
+          </v-card>
+        </v-col>
+      </v-row>
+       <v-row dense>
+        <v-col>
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col4
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col4
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="pa-3"
+            elevation="5"
+            outlined
+          >
+            Col4
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-card>
+
+      <v-card  class="pa-3 mt-3">
+      <v-row
+        dense
+        style="height:120px"
+        class="red darken-2"
+        align="start"
+      >
+        <v-col
+          flex="2"
+        >
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col5
+          </v-card>
+        </v-col>
+
+        <v-col>
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col5
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col5
+          </v-card>
+        </v-col>
+      </v-row>
+       <v-row
+        dense
+        style="height:120px"
+        class="yellow darken-2"
+       >
+        <v-col
+          cols="6"
+          align-self="end"
+        >
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col6
+          </v-card>
+        </v-col>
+        <v-col
+          align-self="center"
+        >
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col6
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="pa-3"
+            elevation="5"
+            outlined
+          >
+            Col6
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-card>
+
+     <v-card  class="pa-3 mt-3">
+      <v-row
+        dense
+        justify="space-around"
+
+      >
+        <v-col
+          cols="auto"
+        >
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col7
+          </v-card>
+        </v-col>
+
+        <v-col
+          cols="auto"
+        >
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col7
+          </v-card>
+        </v-col>
+        <v-col
+          cols="auto"
+        >
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col7
+          </v-card>
+        </v-col>
+      </v-row>
+       <v-row
+        dense
+       >
+        <v-col>
+            <v-card
+              class="pa-3"
+              outlined
+            >
+              Col8
+            </v-card>
+        </v-col>
+        <v-spacer>v-spacer</v-spacer>
+        <v-col>
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col8
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            class="pa-3"
+            elevation="5"
+            outlined
+          >
+            Col8
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-card>
+  </v-container>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
