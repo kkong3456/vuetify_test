@@ -9,8 +9,13 @@ import Tables from '@/views/Tables'
 import Forms from '@/views/Forms'
 import Buttons from '@/views/Buttons'
 import Icons from '@/views/Icons'
+import SignIn from '@/views/Authentication/SignIn'
+import SignUp from '@/views/Authentication/SignUp'
+import ProductList from '@/views/Page/ProductList'
 
 import DefaultLayout from '@/layouts/default/Index'
+import PageLayout from '@/layouts/page/Index'
+import AuthenticationLayout from '@/layouts/authentication/Index'
 
 Vue.use(VueRouter)
 
@@ -64,9 +69,38 @@ const routes=[
         name:'Icons',
         component:Icons
       }
+    ],
+  },
+  {
+    path:'/authentication',
+    component:AuthenticationLayout,
+    children:[
+      {
+        path:'sign-in',
+        name:'SignIn',
+        component:SignIn,
+      },
+      {
+        path:'sign-up',
+        name:'SignUp',
+        component:SignUp,
+      },
+    ],
+  },
+  {
+    path:'/page',
+    component:PageLayout,
+    children:[
+      {
+        path:'product-list',
+        name:'ProductList',
+        component:ProductList,
+      }
     ]
-  }  
+  },
 ]
+  
+ 
 
 const router=new VueRouter({
   mode:'history',

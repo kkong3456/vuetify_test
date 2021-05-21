@@ -85,6 +85,9 @@ export default {
         { title:'Forms', icon:'mdi-form-select', to:'/forms'},
         { title:'Buttons', icon:'mdi-gesture-tap-button', to:'/buttons'},
         { title:'Icons', icon:'mdi-emoticon-excited-outline', to:'/icons'},
+        { title:'SignIn', icon:'mdi-login', to:'/authentication/sign-in'},
+        { title:'SignUp', icon:'mdi-logout', to:'/authentication/sign-up'},
+        { title:'ProductList', icon:'mdi-reproduction', to:'/page/product-list'},
       ],
       right: null,
     }

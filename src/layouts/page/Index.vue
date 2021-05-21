@@ -3,9 +3,9 @@
     <v-app-bar
       app
       color="primary"
-      dark`
+      dark
     >
-      <v-toobar-title>Page Layout</v-toobar-title>
+      <v-toolbar-title>Page Layout</v-toolbar-title>
     </v-app-bar>
     <v-main>
       <v-container>
