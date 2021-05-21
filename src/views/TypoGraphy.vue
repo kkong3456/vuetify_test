@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-card>
+    <v-card class="">
       <v-card-title
 
         class="red--text text--lighten-1 "

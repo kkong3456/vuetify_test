@@ -1,97 +1,16 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <v-app-bar-nav-icon @click="drawer=!drawer" />
-      <v-spacer />
-    </v-app-bar>
-    <v-navigation-drawer
-      v-if="$vuetify.breakpoint.mdAndUp"
-      v-model="drawer"
-      dark
-      :src="require('@/assets/drawermenu.webp')"
-      app
-    >
-      <template
-        #img="props"
-      >
-        <v-img
-          :gradient="gradient"
-          v-bind="props"
-        >
-        </v-img>
-      </template>
-      <v-list-item>
-        <v-list-item-content>
-          <v-list-item-title class="text-h6">
-            Application
-          </v-list-item-title>
-          <v-list-item-subtitle>
-            subtext
-          </v-list-item-subtitle>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-divider />
-
-      <v-list
-        dense
-        nav
-      >
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          link
-          :to="item.to"
-          active-class="primary"
-          class="py-1"
-        >
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
-
-          <v-list-item-content>
-            <v-list-item-title class="text-h6 py-2 red--text text--lighten-3 font-weight-black">
-              {{ item.title }}
-            </v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-main>
-      <v-container fluid>
-        <router-view />
-      </v-container>
-    </v-main>
-  </v-app>
+  <router-view />
 </template>
 
 <script>
 
 export default {
   name: 'App',
-
-  data () {
-    return {
-      drawer:true,
-      gradient:'rgba(0,0,0,.7),rgba(0,0,0,.8)',
-
-      items: [
-        { title: 'Dashboard', icon: 'mdi-view-dashboard', to:'/' },
-        { title:'Grid System',icon:'mdi-view-dashboard',to:'/grid-system'},
-        { title:'Grid List Page',icon:'mdi-view-dashboard',to:'/grid-list-page'},
-        { title:'Break Points', icon:'mdi-view-dashboard',to:'/break-points'},
-        { title:'Typo Graphy', icon:'mdi-view-dashboard', to:'/typo-graphy'},
-      ],
-      right: null,
-    }
-  },
-
-
-
 };
 </script>
+
+<style>
+table thead.v-data-table-header th {
+      font-size: 20px !important;
+}
+</style>
