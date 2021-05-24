@@ -65,7 +65,7 @@ const routes=[
         component:Buttons
       },
       {
-        path:'/icons',
+        path:'icons',
         name:'Icons',
         component:Icons
       }
@@ -99,8 +99,8 @@ const routes=[
     ]
   },
 ]
-  
- 
+
+
 
 const router=new VueRouter({
   mode:'history',
