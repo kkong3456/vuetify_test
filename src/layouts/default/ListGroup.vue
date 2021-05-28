@@ -14,11 +14,13 @@
         v-if="child.items"
         :key="`sub-group-${index}`"
         :item="child"
+        class="pl-3"
       />
       <default-list-item
         v-else
         :key="`child-${index}`"
         :item="child"
+        class="pl-5"
       ></default-list-item>
     </template>
   </v-list-group>

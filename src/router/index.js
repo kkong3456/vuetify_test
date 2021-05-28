@@ -1,73 +1,95 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Dashboard from '@/views/Dashboard'
-import GridSystem from '@/views/GridSystem'
-import GridListPage from '@/views/GridListPage'
-import BreakPoints from '@/views/BreakPoints'
-import TypoGraphy from '@/views/TypoGraphy'
-import Tables from '@/views/Tables'
-import Forms from '@/views/Forms'
-import Buttons from '@/views/Buttons'
-import Icons from '@/views/Icons'
-import SignIn from '@/views/Authentication/SignIn'
-import SignUp from '@/views/Authentication/SignUp'
-import ProductList from '@/views/Page/ProductList'
 
-import DefaultLayout from '@/layouts/default/Index'
 import PageLayout from '@/layouts/page/Index'
 import AuthenticationLayout from '@/layouts/authentication/Index'
+
+//import Test from '@/views/Test'
+//const Test=()=> import('@/views/Test');
+
 
 Vue.use(VueRouter)
 
 const routes=[
   {
     path:'/',
-    component:DefaultLayout,
+    component:()=>import(
+      /*webpackChunkName:"layouts-default-index"*/
+      '@/layouts/default/Index'
+    ),
     children:[
       {
         path:'/',
-        name:'Dashboard',
-        component:Dashboard
+        name:'DashBoard',
+        component:()=>import(
+          /*webpackChunkName:"views-dsahboard"*/
+          '@/views/Dashboard'
+        )
       },
+
       {
         path:'/grid-system',
         name:'GridSystem',
-        component:GridSystem
+        component:()=>import(
+          /*webpackChunkName : "views-grid-system"*/
+          '@/views/GridSystem'
+        )
       },
       {
         path:'/grid-list-page',
         name:'GridListPage',
-        component:GridListPage,
+        component:()=>import(
+          /*webpackChunkName : "views-grid-list-page"*/
+          '@/views/GridListPage'
+        ),
       },
       {
         path:'/break-points',
         name:'BreakPoints',
-        component:BreakPoints,
+        component:()=>import(
+          /*webpackChunkName : "views-grid-list-page"*/
+          '@/views/BreakPoints'
+        ),
       },
       {
         path:'/typo-graphy',
         name:'TypoGraphy',
-        component:TypoGraphy
+        component:()=>import(
+          /*webpackChunkName : "views-typo-graphy"*/
+          '@/views/TypoGraphy'
+        )
       },
       {
         path:'/tables',
         name:'Tables',
-        component:Tables
+        component:()=>import(
+          /*webpackChunkName : "views-tables"*/
+          '@/views/Tables'
+        )
       },
       {
         path:'/forms',
         name:'Forms',
-        component:Forms
+        component:()=>import(
+          /*webpackChunkName : "views-forms"*/
+          '@/views/Forms'
+        )
       },
       {
         path:'/buttons',
         name:'Buttons',
-        component:Buttons
+        component:()=>import(
+          /*webpackChunkName : "views-button"*/
+          '@/views/Buttons'
+        )
       },
       {
         path:'icons',
         name:'Icons',
-        component:Icons
+        component:()=>import(
+          /*webpackChunkName : "views-icons"*/
+          '@/views/Icons'
+        )
       }
     ],
   },
@@ -78,23 +100,29 @@ const routes=[
       {
         path:'sign-in',
         name:'SignIn',
-        component:SignIn,
+        component:()=>import (/* webpackChunkName : "views-authentication" */'@/views/Authentication/SignIn'),
       },
       {
         path:'sign-up',
         name:'SignUp',
-        component:SignUp,
+        component:()=>import (/* webpackChunkName : "views-authentication" */'@/views/Authentication/SignUp'),
       },
     ],
   },
   {
     path:'/page',
-    component:PageLayout,
+    component:()=>import(
+      /*webpackChunkName : 'layouts-page-index'*/
+      '@/layouts/page/Index'
+    ),
     children:[
       {
         path:'product-list',
         name:'ProductList',
-        component:ProductList,
+        component:()=>import(
+          /*webpackChunkName : 'views-page-productlist'*/
+          '@/views/Page/ProductList'
+        ),
       }
     ]
   },
