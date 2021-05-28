@@ -1,25 +1,23 @@
 <template>
-<v-navigation-drawer
-      v-bind="$attrs"
-      dark
-      :src="require('@/assets/drawermenu.webp')"
-      app
+  <v-navigation-drawer
+    v-bind="$attrs"
+    dark
+    :src="require('@/assets/drawermenu.webp')"
+    app
+  >
+    <template
+      #img="props"
     >
-      <template
-        #img="props"
-      >
-        <v-img
-          :gradient="gradient"
-          v-bind="props"
-        />
-      </template>
+      <v-img
+        :gradient="gradient"
+        v-bind="props"
+      />
+    </template>
 
-      <default-drawer-header></default-drawer-header>
-      <v-divider />
-      <default-list v-bind:items="items"></default-list>
-
-
-    </v-navigation-drawer>
+    <default-drawer-header />
+    <v-divider />
+    <default-list :items="items" />
+  </v-navigation-drawer>
 </template>
 
 <script>

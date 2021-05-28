@@ -10,7 +10,7 @@
         md="4"
         lg="3"
       >
-        <product-item></product-item>
+        <product-item />
       </v-col>
     </v-row>
   </v-container>

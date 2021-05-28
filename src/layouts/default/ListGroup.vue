@@ -5,7 +5,7 @@
     <template v-slot:activator>
       <v-list-item-content>
         <v-list-item-title>
-          {{item.title}}
+          {{ item.title }}
         </v-list-item-title>
       </v-list-item-content>
     </template>
@@ -21,7 +21,7 @@
         :key="`child-${index}`"
         :item="child"
         class="pl-5"
-      ></default-list-item>
+      />
     </template>
   </v-list-group>
 </template>

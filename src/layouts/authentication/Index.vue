@@ -1,6 +1,6 @@
 <template>
   <v-app>
-   <authentication-view></authentication-view>
+    <authentication-view />
   </v-app>
 </template>
 

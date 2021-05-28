@@ -1,9 +1,8 @@
 <template>
   <v-app>
-    <default-bar @drawer="drawer=!drawer"></default-bar>
-    <default-drawer v-model="drawer"></default-drawer>
-    <default-view></default-view>
-
+    <default-bar @drawer="drawer=!drawer" />
+    <default-drawer v-model="drawer" />
+    <default-view />
   </v-app>
 </template>
 
