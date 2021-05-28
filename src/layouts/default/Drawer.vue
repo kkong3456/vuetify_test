@@ -37,6 +37,7 @@ export default {
 
       items: [
         { title: 'Dashboard', icon: 'mdi-view-dashboard', to:'/' },
+        { title: 'Test', icon:'mdi-alpha-t-box',to:'/test'},
         { title:' Pages',icon:'mdi-menu', items:[
           { title:'Authentication',icon:'mdi-login',items:[
             { title:'SignIn', icon:'mdi-login', to:'/authentication/sign-in'},

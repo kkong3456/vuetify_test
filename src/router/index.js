@@ -26,6 +26,14 @@ const routes=[
           '@/views/Dashboard'
         )
       },
+      {
+        path:'/test',
+        name:'Test',
+        component:()=>import(
+          /*webpackChunkName:"views-test"*/
+          '@/views/Test'
+        )
+      },
 
       {
         path:'/grid-system',
