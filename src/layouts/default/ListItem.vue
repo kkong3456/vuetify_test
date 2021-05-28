@@ -26,7 +26,7 @@
 export default {
   name:"DefaultListItem",
   props:{
-    item:{}
+    items:{}
   }
 }
 
