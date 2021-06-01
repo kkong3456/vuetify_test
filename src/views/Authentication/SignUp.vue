@@ -2,14 +2,13 @@
   <v-container fill-height>
     <v-row justify="center">
       <v-col cols="auto">
-        <router-link to='/'>
+        <router-link to="/">
           <v-img
-            title='홈으로'
+            title="홈으로"
             class="mx-auto mb-6"
             width="120"
             :src="require('@/assets/logo.svg')"
-          >
-          </v-img>
+          />
         </router-link>
         <v-card
           width="460"
@@ -41,7 +40,6 @@
                   v-slot="{errors}"
                   name="비밀번호"
                   :rules="{required:true}"
-
                 >
                   <v-text-field
                     v-model="password"
